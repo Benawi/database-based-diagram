@@ -71,7 +71,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Linkdin: [Bwambale](https://www.linkedin.com/in/Bwambale-benny-wolter/)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- Database performance audit.💯
+- OPtimization the foreign key with indexing💯
+- Use the many to many relationship🚀
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
