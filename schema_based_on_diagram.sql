@@ -9,3 +9,10 @@ CREATE TABLE treatments (
     type VARCHAR(100),
     name VARCHAR(100)
 );
+
+CREATE TABLE medical_histories (
+    id BIGINT NOT NULL PRIMARY KEY,
+    admitted_at TIMESTAMP,
+    patients_id INTEGER REFERENCES patients(id),
+    treatment_id INTEGER REFERENCES treatments(id)
+);
