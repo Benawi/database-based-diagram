@@ -33,3 +33,11 @@ CREATE TABLE invoice_items (
     invoice_id INTEGER REFERENCES invoices(id),
     treatment_id INTEGER REFERENCES treatments(id)
 );
+
+
+-- Indexes
+CREATE INDEX id_invoice_items_treatments_id ON invoice_items (treatment_id);
+CREATE INDEX id_invoice_items_invoice_id ON invoice_items (invoice_id);
+CREATE INDEX id_invoices_medical_history_id ON invoices (medical_history_id);
+CREATE INDEX id_medical_histories_patients_id ON medical_histories (patients_id);
+CREATE INDEX id_medical_histories_treatments_id ON medical_histories (treatment_id); 
