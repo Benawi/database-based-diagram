@@ -24,3 +24,12 @@ CREATE TABLE invoices (
     payed_at TIMESTAMP,
     medical_history_id INTEGER REFERENCES medical_histories(id)
 );
+
+CREATE TABLE invoice_items (
+    id BIGINT NOT NULL PRIMARY KEY,
+    unit_price DECIMAL,
+    quantity INTEGER,
+    total_price DECIMAL,
+    invoice_id INTEGER REFERENCES invoices(id),
+    treatment_id INTEGER REFERENCES treatments(id)
+);
